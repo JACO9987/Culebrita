@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Juego de Culebrita</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<h1>🐍 El juego de culebrita que nos hará millonarios by Julián</h1>
+
+<p>Puntos: <span id="puntos">0</span></p>
+
+<!-- Pantalla de Game Over -->
+
+<div id="gameOver" class="game-over">
+
+<h2>Qué mal juegas jjssjs</h2>
+
+<p>Puntuación: <span id="puntosFinales">0</span></p>
+
+<button id="reiniciar">Volver a empezar</button>
+
+</div>
+
+<!-- Tablero del juego -->
+
+<canvas id="tablero" width="400" height="400"></canvas>
+
+<!-- Controles para celular -->
+
+<div class="controles">
+
+<button id="arriba">⬆️</button>
+
+<div class="fila-controles">
+
+<button id="izquierda">⬅️</button>
+
+<button id="abajo">⬇️</button>
+
+<button id="derecha">➡️</button>
+
+</div>
+
+</div>
+
+<p class="instrucciones">
+Botones de movimiento - Prueba en telefono
+</p>
+
+<script src="game.js"></script>
+
+</body>
+
+</html>

@@ -17,9 +17,8 @@ let comida = generarComida();
 let puntos = 0;
 
 
-// ==========================================
 // GENERAR COMIDA
-// ==========================================
+
 
 function generarComida() {
 
@@ -31,9 +30,9 @@ function generarComida() {
 }
 
 
-// ==========================================
-// CONTROL DEL TECLADO
-// ==========================================
+
+// TECLADO
+
 
 document.addEventListener("keydown", moverCulebra);
 
@@ -154,9 +153,9 @@ function() {
 
 );
 
-// ==========================================
+
 // ACTUALIZAR JUEGO
-// ==========================================
+
 
 function actualizarJuego() {
 
@@ -228,9 +227,9 @@ function actualizarJuego() {
 }
 
 
-// ==========================================
+
 // DIBUJAR JUEGO
-// ==========================================
+
 
 function dibujarJuego() {
 
@@ -275,9 +274,9 @@ function dibujarJuego() {
 }
 
 
-// ==========================================
+
 // GAME OVER
-// ==========================================
+
 
 function terminarJuego() {
 
@@ -289,9 +288,9 @@ function terminarJuego() {
 }
 
 
-// ==========================================
+
 // INICIAR JUEGO
-// ==========================================
+
 
 let intervaloJuego = setInterval(
     actualizarJuego,
@@ -299,9 +298,9 @@ let intervaloJuego = setInterval(
 );
 
 
-// ==========================================
+
 // BOTÓN REINICIAR
-// ==========================================
+
 
 document.getElementById("reiniciar").addEventListener(
     "click",
@@ -337,8 +336,8 @@ function reiniciarJuego() {
 }
 
 
-// ==========================================
+
 // DIBUJAR ESTADO INICIAL
-// ==========================================
+
 
 dibujarJuego();
